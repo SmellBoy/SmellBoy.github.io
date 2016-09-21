@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,22 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-
-
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/loader-style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/js/progress-bar/number-pb.css">
+    <link rel="stylesheet" href="assets/css/extra-pages.css">
 
 
-    <style type="text/css">
-    canvas#canvas4 {
-        position: relative;
-        top: 20px;
-    }
-    </style>
 
 
 
@@ -36,7 +29,7 @@
     <link rel="shortcut icon" href="assets/ico/minus.png">
 </head>
 
-<body> 
+<body><div id="awwwards" class="right black"><a href="http://www.awwwards.com/best-websites/apricot-navigation-admin-dashboard-template" target="_blank">best websites of the world</a></div>
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -57,7 +50,7 @@
 
 
                 <div id="logo-mobile" class="visible-xs">
-                   <h1>WEB管理<span>v1.2</span></h1>
+                   <h1>Apricot<span>v1.3</span></h1>
                 </div>
 
             </div>
@@ -255,7 +248,7 @@
     <!-- SIDE MENU -->
     <div id="skin-select">
         <div id="logo">
-         <h1>CloudSoft<span>v1.2</span></h1>
+         <h1>Apricot<span>v1.3</span></h1>
         </div>
 
         <a id="toggle">
@@ -274,9 +267,6 @@
                 <input type="search" placeholder="Search Menu..." class="id_search">
             </form>
         </div>
-
-
-
 
         <div class="skin-part">
             <div id="tree-wrap">
@@ -364,7 +354,7 @@
                                 <li>
                                     <a class="tooltip-tip2 ajax-load" href="blank_page.html" title="Blank Page"><i class="icon-media-record"></i><span>Blank Page</span></a>
                                 </li>
-                                 <li>
+                                <li>
                                     <a class="tooltip-tip2 ajax-load" href="profile.html" title="Profile Page"><i class="icon-user"></i><span>Profile Page</span></a>
                                 </li>
                                 <li>
@@ -544,16 +534,16 @@
             <!--TITLE -->
             <div class="row">
                 <div id="paper-top">
-                    <div class="col-lg-3">
+                    <div class="col-sm-3">
                         <h2 class="tittle-content-header">
-                            <i class="icon-window"></i> 
-                            <span>Dashboard
+                            <span class="entypo-clock"></span>
+                            <span>Time Line
                             </span>
                         </h2>
 
                     </div>
 
-                    <div class="col-lg-7">
+                    <div class="col-sm-7">
                         <div class="devider-vertical visible-lg"></div>
                         <div class="tittle-middle-header">
 
@@ -568,7 +558,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-sm-2">
                         <div class="devider-vertical visible-lg"></div>
                         <div class="btn-group btn-wigdet pull-right visible-lg">
                             <div class="btn">
@@ -606,11 +596,11 @@
                 </li>
                 <li><i class="fa fa-lg fa-angle-right"></i>
                 </li>
-                <li><a href="#" title="Sample page 1">Home</a>
+                <li><a href="#" title="Sample page 1">Extra Pages</a>
                 </li>
                 <li><i class="fa fa-lg fa-angle-right"></i>
                 </li>
-                <li><a href="#" title="Sample page 1">Dashboard</a>
+                <li><a href="#" title="Sample page 1">Timeline</a>
                 </li>
                 <li class="pull-right">
                     <div class="input-group input-widget">
@@ -624,544 +614,132 @@
 
 
 
-
-
-
-            <div id="paper-middle">
-                <div id="mapContainer"></div>
-            </div>
-
-            <!--  DEVICE MANAGER -->
             <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="profit" id="profitClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="maki-ferry"></i>&#160;&#160;Ferry Arrival</span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#profitClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="value">
-                                <span class="pull-left"><i class="entypo-clock clock-position"></i>
-                                </span>
-                                <div id="getting-started">
-                                    <span>%M</span>
-
-                                    <span>%S</span>
-                                </div>
-
-
-                            </div>
-
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                            <div class="profit-line">
-                                <i class="fa fa-caret-up fa-lg"></i>&#160;&#160; 50% &#160;From Last Hour</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="revenue" id="revenueClose">
-                            <div class="headline ">
-
-                                <h3>
-                                    <span>
-                                        <i class="maki-aboveground-rail"></i>&#160;&#160;Train Speed</span>
-                                </h3>
-
-                                <div class="titleClose">
-                                    <a href="#revenueClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">
-                                <span class="pull-left"><i class="entypo-gauge gauge-position"></i>
-                                </span>
-                                <canvas id="canvas4" width="70" height="70"></canvas>
-                                <i class="pull-right">/Km</i>
-
-                            </div>
-
-
-
-
-
-
-
-
-                            <div class="progress-tinny">
-                                <div style="width: 25%" class="bar"></div>
-                            </div>
-                            <div class="profit-line">
-                                <i class="fa fa-caret-down fa-lg"></i>&#160;&#160;Rate : 20 km/Hour</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="order" id="orderClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="maki-airport"></i>&#160;&#160;AIR PORT TRAFFIC</span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#orderClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">
-                                <span><i class="fa fa-plane fa-2x"></i>
-                                </span><b id="speed"></b><b>Take Off</b>
-
-                            </div>
-
-                            <div class="progress-tinny">
-                                <div style="width: 10%" class="bar"></div>
-                            </div>
-                            <div class="profit-line">
-                                <i class="fa fa-caret-down fa-lg"></i>&#160;&#160;Rate : 20 Plane/Hour</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class=" member" id="memberClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="fa fa-truck"></i>
-                                        &#160;&#160;CARGO
+                <div class="time-wrap">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- The time line -->
+                            <ul class="timeline">
+                                <!-- timeline time label -->
+                                <li class="time-label">
+                                    <span class="bg-red">
+                                        10 Feb. 2014
                                     </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#memberClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">
-                                <span><i class="maki-warehouse"></i>
-                                </span>45<b>Sent</b>
+                                </li>
+                                <!-- /.timeline-label -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-envelope bg-time"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+                                        <h3 class="timeline-header"><a href="#">Support Team</a> sent you and email</h3>
+                                        <div class="timeline-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dui id justo rhoncus consequat. Aliquam porttitor, arcu quis ornare ultricies, augue neque fringilla turpis, nec cursus arcu enim nec ante. Duis lacus velit, ultricies nec condimentum at, ultrices id eros. Nullam elementum turpis ut est porttitor porttitor. Mauris eu nunc id neque tempor venenatis. Nulla eu placerat orci, quis gravida nulla. Donec suscipit ligula felis, nec egestas massa aliquet vitae. Cras nec faucibus leo, eu placerat est. Phasellus tortor nulla, congue tristique cursus nec, pellentesque non nunc. Nullam condimentum ante nulla, pellentesque fermentum mi tristique eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet rutrum felis. Ut ultricies mi ut adipiscing fringilla.
+                                        </div>
+                                        <div class='timeline-footer'>
+                                            <a class="btn btn-primary btn-xs">Read more</a>
+                                            <a class="btn btn-danger btn-xs">Delete</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-user bg-time"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+                                        <h3 class="timeline-header no-border"><a href="#">Dominic Pagboo</a> accepted your friend request</h3>
 
-                            </div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                            <div class="profit-line">
-                                <span class="entypo-down-circled"></span>&#160;50% From Last Month</div>
+                                        <div class="timeline-body">
+                                            Vestibulum risus augue, cursus et est sed, pharetra venenatis nibh. Sed hendrerit sollicitudin pretium. Integer consequat suscipit scelerisque. Nullam sagittis, ante et aliquet tincidunt, nunc metus tincidunt ipsum, at gravida lacus nibh eget purus. Nulla euismod est et massa scelerisque, vitae semper diam ultrices. Donec porta condimentum pharetra. Suspendisse tincidunt, mauris vel laoreet aliquet, urna ante tristique nisl, ut sagittis justo neque quis augue. In sollicitudin vel libero interdum varius.
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-comments bg-time"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 40 mins ago</span>
+                                        <h3 class="timeline-header"><a href="#">Ronald deboor</a> commented on your post</h3>
+                                        <div class="timeline-body">
+                                            Pellentesque vel sem in dui porttitor tempus non interdum augue. Aliquam consectetur arcu nec enim vulputate, eget mattis augue rhoncus. Aliquam porttitor cursus metus vitae fringilla. Pellentesque sed ipsum id purus placerat ornare. Mauris bibendum enim tellus,
+                                        </div>
+                                        <div class='timeline-footer'>
+                                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <!-- timeline time label -->
+                                <li class="time-label">
+                                    <span class="bg-green">
+                                        3 Jan. 2014
+                                    </span>
+                                </li>
+                                <!-- /.timeline-label -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-camera bg-time"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                                        <h3 class="timeline-header"><a href="#">Joko Sriyanto</a> Your new friends</h3>
+                                        <div class="timeline-body">
+                                            <img src="http://api.randomuser.me/portraits/thumb/men/40.jpg" alt="..." class='margin'>
+                                            <img src="http://api.randomuser.me/portraits/thumb/women/41.jpg" alt="..." class='margin'>
+                                            <img src="http://api.randomuser.me/portraits/thumb/men/42.jpg" alt="..." class='margin'>
+                                            <img src="http://api.randomuser.me/portraits/thumb/women/43.jpg" alt="..." class='margin'>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-video-camera bg-time"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                                        <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
+                                        <div class="timeline-body">
+                                            Pellentesque vel sem in dui porttitor tempus non interdum augue. Aliquam consectetur arcu nec enim vulputate, eget mattis augue rhoncus. Aliquam porttitor cursus metus vitae fringilla. Pellentesque sed ipsum id purus placerat ornare. Mauris bibendum enim tellus,
+
+                                        </div>
+                                        <div class="timeline-footer">
+                                            <a href="#" class="btn btn-xs bg-time">See comments</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <li>
+                                    <i class="fa fa-clock-o bg-time"></i>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- /.col -->
                     </div>
-                </div>
-            </div>
-            <!--  / DEVICE MANAGER -->
-
-
-
-
-
-
-
-
-
-
-            <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div id="siteClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="fontawesome-truck"></span>&nbsp;Destination</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#siteClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#site">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="site" class="body-nest" style="min-height:296px;">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th></th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="armada-devider">
-                                                    <div class="armada">
-                                                        <span style="background:#65C3DF">
-                                                            <span class="maki-bus"></span>&nbsp;&nbsp;Trans Berlin</span>
-                                                        <p>
-                                                            <span class="entypo-gauge"></span>&nbsp;12 Km/<i>Hours</i>
-                                                        </p>
-                                                    </div>
-                                                </td>
-                                                <td class="driver-devider">
-                                                    <img class="armada-pic img-circle" alt="" src="http://api.randomuser.me/portraits/thumb/men/14.jpg">
-                                                    <h3>Mark Zukenbeirg</h3>
-                                                    <br>
-                                                    <p>Driver</p>
-                                                </td>
-                                                <td class="progress-devider">
-
-
-                                                    <section id="basic">
-                                                        <article>
-
-                                                            <div class="number-pb">
-                                                                <div class="number-pb-shown"></div>
-                                                                <div class="number-pb-num">0</div>
-                                                            </div>
-                                                        </article>
-                                                    </section>
-                                                    <span class="label pull-left">Berlin</span>
-                                                    <span class="label pull-right">Muchen</span>
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="armada-devider">
-                                                    <div class="armada">
-                                                        <span style="background:#45B6B0">
-                                                            <span class="fontawesome-plane"></span>&nbsp;&nbsp;Fly Airlines</span>
-                                                        <p>
-                                                            <span class="entypo-gauge"></span>&nbsp;600 Km/<i>Hours</i>
-                                                        </p>
-                                                    </div>
-                                                </td>
-                                                <td class="driver-devider">
-                                                    <img class="armada-pic img-circle" alt="" src="http://api.randomuser.me/portraits/thumb/men/38.jpg">
-                                                    <h3>Marko Freytag</h3>
-                                                    <br>
-                                                    <p>Pilot</p>
-                                                </td>
-                                                <td class="progress-devider">
-
-
-                                                    <section id="percentage">
-                                                        <article>
-                                                            <div class="number-pb">
-                                                                <div class="number-pb-shown dream"></div>
-                                                                <div class="number-pb-num">0%</div>
-                                                            </div>
-                                                        </article>
-                                                    </section>
-
-
-                                                    <span class="label pull-left">Berlin</span>
-                                                    <span class="label pull-right">London</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="armada-devider">
-                                                    <div class="armada">
-                                                        <span style="background:#FF6B6B">
-                                                            <span class="maki-aboveground-rail"></span>&nbsp;&nbsp;Fazttrain</span>
-                                                        <p>
-                                                            <span class="entypo-gauge"></span>&nbsp;40 Km/<i>Hours</i>
-                                                        </p>
-                                                    </div>
-                                                </td>
-                                                <td class="driver-devider">
-                                                    <img class="armada-pic img-circle" alt="" src="http://api.randomuser.me/portraits/thumb/men/39.jpg">
-                                                    <h3>Dieter Gruenewald</h3>
-                                                    <br>
-                                                    <p>machinist</p>
-                                                </td>
-                                                <td class="progress-devider">
-
-                                                    <section id="step">
-                                                        <article>
-
-                                                            <div class="number-pb">
-                                                                <div class="number-pb-shown sun"></div>
-                                                                <div class="number-pb-num">0/0</div>
-                                                            </div>
-                                                        </article>
-                                                    </section>
-
-                                                    <span class="label pull-left">Berlin</span>
-                                                    <span class="label pull-right">Dortmund</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div id="RealTimeClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="fontawesome-resize-horizontal"></span>&nbsp;Direction</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#RealTimeClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#RealTime">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="RealTime" style="min-height:296px;padding-top:20px;" class="body-nest">
-                                <ul class="direction">
-                                    <li>
-                                        <span class="direction-icon maki-fuel" style="background:#FF6B6B"></span>
-                                        <h3>
-                                            <span>Gas Station</span>
-                                        </h3>
-                                        <p>5 Km Foward&nbsp;&nbsp;<i class="fa fa-arrow-circle-up"></i>
-                                        </p>
-                                        <p><i>Estimated time </i>:&nbsp;<i class="fa fa-clock-o"></i>&nbsp;&nbsp;20 Min</p>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <span class="direction-icon maki-fast-food" style="background:#65C3DF"></span>
-                                        <h3>
-                                            <span>Restourant</span>
-                                        </h3>
-                                        <p>1 Km Turn Left&nbsp;&nbsp;<i class="fa fa-reply"></i>
-                                        </p>
-                                        <p><i>Estimated time </i>:&nbsp;<i class="fa fa-clock-o"></i>&nbsp;&nbsp;20 Min</p>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <span class="direction-icon maki-giraffe" style="background:#45B6B0"></span>
-                                        <h3>
-                                            <span>Zoo</span>
-                                        </h3>
-                                        <p>3 Km Turn Right &nbsp;&nbsp;<i class="fa fa-share"></i>
-                                        </p>
-                                        <p><i>Estimated time </i>:&nbsp;<i class="fa fa-clock-o"></i>&nbsp;&nbsp;20 Min</p>
-                                    </li>
-                                    <li class="divider"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- /.row -->
                 </div>
             </div>
 
+            <!-- /END OF CONTENT -->
 
 
 
-
-            <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="chart-wrap">
-                            <div class="chart-dash">
-                                <!-- <div id="sparkline"></div> -->
-                                <div id="placeholder" style="width:100%;height:200px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <div class="speed">
-                                        <h2>Speed Avarage</h2>
-                                        <h1>74
-                                            <span>Km / hours</span>
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="traffic">
-                                        <h2>Traffic per day</h2>
-                                        <h1>2.5874</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="traffic-rates">
-                                        <h4>Traffic Rates</h4>
-                                        <h1>76 %
-                                            <span>-1,2 %</span>
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="traffic-rates">
-                                        <h4>Traffic Rates</h4>
-                                        <h1>25 %
-                                            <span>-1,8 %</span>
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="traffic-rates">
-                                        <h4>Traffic Rates</h4>
-                                        <h1>83 %
-                                            <span>-1,9 %</span>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="weather-wrap">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="temperature"><b>Monday</b>, 07:30 AM
-                                        <span>F</span>
-                                        <span><b>C</b>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="weather-icon">
-                                        <i class="wi-day-lightning"></i>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="weather-text">
-                                        <h2>Berlin
-                                            <br><i>Day Lightning</i>
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="weather-text">
-                                        <h3><i class="wi-thermometer"></i>18<i class="wi-celcius"></i>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="weather-dash">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Mon</h2>
-                                            <h3>85
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4>
-                                                <span><i class="wi-day-lightning"></i>
-                                                </span>
-                                            </h4>
-                                            <h5>15
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Tue</h2>
-                                            <h3>81
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4><i class="wi-day-cloudy"></i>
-                                            </h4>
-                                            <h5>12
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Wed</h2>
-                                            <h3>83
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4><i class="wi-rain-mix"></i>
-                                            </h4>
-                                            <h5>14
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Thu</h2>
-                                            <h3>80
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4><i class="wi-day-sunny"></i>
-                                            </h4>
-                                            <h5>15
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Fri</h2>
-                                            <h3>79
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4><i class="wi-day-storm-showers"></i>
-                                            </h4>
-                                            <h5>11
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="daily-weather">
-                                            <h2>Sat</h2>
-                                            <h3>82
-                                                <span><i class="wi-fahrenheit"></i>
-                                                </span>
-                                            </h3>
-                                            <h4><i class="wi-cloudy"></i>
-                                            </h4>
-                                            <h5>10
-                                                <i>km/h</i>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- FOOTER -->
+            <div class="footer-space"></div>
+            <div id="footer">
+                <div class="devider-footer-left"></div>
+                <div class="time">
+                    <p id="spanDate">
+                    <p id="clock">
                 </div>
-                <!-- /END OF CONTENT -->
-
-
-
-                <!-- FOOTER -->
-                <div class="footer-space"></div>
-                <div id="footer">
-                    <div class="devider-footer-left"></div>
-                    <div class="time">
-                        <p id="spanDate">
-                        <p id="clock">
-                    </div>
-                    <div class="copyright">Make with Love
-                        <span class="entypo-heart"></span>Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> All Rights Reserved</div>
-                    <div class="devider-footer"></div>
-
-
-                </div>
-                <!-- / END OF FOOTER -->
-
+                <div class="copyright">Make with Love
+                    <span class="entypo-heart"></span>Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> All Rights Reserved</div>
+                <div class="devider-footer"></div>
 
             </div>
+            <!-- / END OF FOOTER -->
+
+
         </div>
     </div>
     <!--  END OF PAPER WRAP -->
@@ -1173,7 +751,7 @@
                 <h3>
                     <span><i class="entypo-gauge"></i>&nbsp;&nbsp;MAIN WIDGET</span>
                 </h3>
-                <div class="col-lg-12">
+                <div class="col-sm-12">
 
                     <div class="widget-knob">
                         <span class="chart" style="position:relative" data-percent="86">
@@ -1217,7 +795,7 @@
                 <h3>
                     <span><i class="entypo-chat"></i>&nbsp;&nbsp;CHAT</span>
                 </h3>
-                <div class="col-lg-12">
+                <div class="col-sm-12">
                     <span class="label label-warning label-chat">Online</span>
                     <ul class="chat">
                         <li>
@@ -1291,6 +869,7 @@
                             </a>
                         </li>
 
+
                     </ul>
                 </div>
             </div>
@@ -1298,10 +877,7 @@
     </div>
 
     <!-- END OF RIGHT SLIDER CONTENT-->
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script src="assets/js/progress-bar/src/jquery.velocity.min.js"></script>
-    <script src="assets/js/progress-bar/number-pb.js"></script>
-    <script src="assets/js/progress-bar/progress-app.js"></script>
+
 
 
 
@@ -1313,107 +889,6 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 
-
-
-    <!-- GAGE -->
-
-
-    <script type="text/javascript" src="assets/js/chart/jquery.flot.js"></script>
-    <script type="text/javascript" src="assets/js/chart/jquery.flot.resize.js"></script>
-    <script type="text/javascript" src="assets/js/chart/realTime.js"></script>
-    <script type="text/javascript" src="assets/js/speed/canvasgauge-coustom.js"></script>
-    <script type="text/javascript" src="assets/js/countdown/jquery.countdown.js"></script>
-
-
-
-    <script src="assets/js/jhere-custom.js"></script>
-
-    <script>
-    var gauge4 = new Gauge("canvas4", {
-        'mode': 'needle',
-        'range': {
-            'min': 0,
-            'max': 90
-        }
-    });
-    gauge4.draw(Math.floor(Math.random() * 90));
-    var run = setInterval(function() {
-        gauge4.draw(Math.floor(Math.random() * 90));
-    }, 3500);
-    </script>
-
-
-    <script type="text/javascript">
-    /* Javascript
-     *
-     * See http://jhere.net/docs.html for full documentation
-     */
-    $(window).on('load', function() {
-        $('#mapContainer').jHERE({
-            center: [52.500556, 13.398889],
-            type: 'smart',
-            zoom: 10
-        }).jHERE('marker', [52.500556, 13.338889], {
-            icon: 'assets/img/marker.png',
-            anchor: {
-                x: 12,
-                y: 32
-            },
-            click: function() {
-                alert('Hallo from Berlin!');
-            }
-        })
-            .jHERE('route', [52.711, 13.011], [52.514, 13.453], {
-                color: '#FFA200',
-                marker: {
-                    fill: '#86c440',
-                    text: '#'
-                }
-            });
-    });
-    </script>
-    <script type="text/javascript">
-    var output, started, duration, desired;
-
-    // Constants
-    duration = 5000;
-    desired = '50';
-
-    // Initial setup
-    output = $('#speed');
-    started = new Date().getTime();
-
-    // Animate!
-    animationTimer = setInterval(function() {
-        // If the value is what we want, stop animating
-        // or if the duration has been exceeded, stop animating
-        if (output.text().trim() === desired || new Date().getTime() - started > duration) {
-            console.log('animating');
-            // Generate a random string to use for the next animation step
-            output.text('' + Math.floor(Math.random() * 60)
-
-            );
-
-        } else {
-            console.log('animating');
-            // Generate a random string to use for the next animation step
-            output.text('' + Math.floor(Math.random() * 120)
-
-            );
-        }
-    }, 5000);
-    </script>
-    <script type="text/javascript">
-    $('#getting-started').countdown('2015/01/01', function(event) {
-        $(this).html(event.strftime(
-
-            '<span>%M</span>' + '<span class="start-min">:</span>' + '<span class="start-min">%S</span>'));
-    });
-    </script>
-
-<div style="text-align:center;">
-<p>More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-</div>
 </body>
 
 </html>
