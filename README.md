@@ -1,6 +1,6 @@
 # SmellBoy.github.io
 
-[The demo, please enter here](https://smellboy.github.io/)
+[The home, please enter here](https://smellboy.github.io/)
 
 ## pic
 ![](/public/images/r1.jpg)
