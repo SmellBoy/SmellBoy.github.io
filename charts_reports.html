@@ -1,459 +1,65 @@
-<!DOCTYPE html>
-<!-- saved from url=(0072)http://wx1.gtjaqh.com/gt_weixin/JYFX?openId=o4sjVt4xzez0WO36LBqx_oRvxH30 -->
-<html class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./charts_reports_files/jsonp.php"></script><!--<base href="http://wx1.gtjaqh.com/gt_weixin/JYFX?openId=o4sjVt4xzez0WO36LBqx_oRvxH30">--><base href=".">
-
-<meta http-equiv="Expires" content="0">
-<meta name="description" content="">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta http-equiv="cleartype" content="on">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="">
-<script type="text/javascript" src="./charts_reports_files/jquery-1.9.1.min.js.下载"></script>
-<link rel="stylesheet" href="./charts_reports_files/mobiscroll.css" type="text/css">
-<link rel="stylesheet" type="text/css" href="./charts_reports_files/css.css">
-<script type="text/javascript" src="./charts_reports_files/jquery-1.9.1.min.js(1).下载"></script>
-<script type="text/javascript" src="./charts_reports_files/jquery.mobile-1.4.2.min.js.下载"></script>
-<script type="text/javascript" src="./charts_reports_files/mobiscroll.js.下载"></script>
-<script type="text/javascript" src="./charts_reports_files/exporting.js.下载"></script>
-<script type="text/javascript" src="./charts_reports_files/highcharts-3d.js.下载"></script>
-<script src="./charts_reports_files/highstock.js.下载"></script>
-<script src="./charts_reports_files/exporting.js(1).下载"></script>
-<script type="text/javascript" src="./charts_reports_files/jquery.zxxbox.3.0.js.下载"></script><style type="text/css">#zxxBlank{position:absolute;z-index:2000;left:0;top:0;width:100%;height:0;background:black;}.wrap_out{padding:0;background:#f8f8f8; border-radius:8px;box-shadow:0 0 6px rgba(0,0,0,.5);position:absolute;z-index:2000;left:-9999px; width:320px;}.wrap_in{background:#f8f8f8; border-radius:8px;}.wrap_bar{border-bottom:1px solid #ccc; border-radius:8px 8px 0 0; background:#dfdfdf;}.wrap_title{line-height:36px; padding-left:10px; margin:0;font-weight:normal;font-size:18px;}.wrap_close{position:relative;}.wrap_close a{width:36px;height:36px;text-align:center;margin-top:-29px;color:#666;font:bold 24px/17px Tahoma;text-decoration:none;cursor:pointer;position:absolute;right:0px;}.wrap_close a:hover{text-decoration:none;color:#e03b1b;}.wrap_body{}.wrap_remind{width:16em;padding:0; text-align:center;}.wrap_remind .wrap_content{padding:30px 40px; text-align:center;}.wrap_remind p{margin:0; text-align:center;}.submit_btn{display:inline-block; padding:3px 12px 1.99px;line-height:40px;border:none;width:100%;font-size:18px; border-radius:0 0 8px 8px;border-top:1px solid #ccc;cursor:pointer;overflow:visible;}.submit_btn{background:#f8f8f8; color:#e03b1b;font-weight:bold;width:100%;}.submit_btn:hover{text-decoration:none;color:#fff;background:#999;}.submit_btn_r{background:#f8f8f8;line-height:40px;color:#e03b1b;float:right; font-weight:bold;width:50%; font-size:18px;border:none;border-top:1px solid #ccc;border-radius:0 0 8px 0 ;}.submit_btn_r:hover{text-decoration:none;color:#fff;background:#999;}.cancel_btn_l{background:#f8f8f8;line-height:40px;color:#e03b1b; float:left;width:50%;font-size:18px; border:none; border-top:1px solid #ccc;  border-right:1px solid #ccc; border-radius:0 0 0 8px;}.cancel_btn_l:hover{text-decoration:none;color:#fff;background:#999;}</style>
-<style type="text/css">
-.ui-loader {
-	display: none;
-}
-</style>
-
-<script type="text/javascript">
-
-  $(function () {
-          opt1 = {
-              preset: 'date', //日期
-              theme: 'jqm', //皮肤样式
-              display: 'modal', //显示方式 
-              mode: 'mixed', //日期选择模式
-              dateFormat: 'yy-mm-dd', // 日期输出格式
-              dateOrder: 'yymmdd', //面板中日期排列格式
-              setText: '确定', //确认按钮名称
-              cancelText: '取消',//取消按钮名籍我
-              dayText: '日', //面板中日文字
-              monthText: '月', //面板中月文字
-              yearText: '年', //面板中年文字
-              endYear: 2020, //结束年份
-              hourText: '时',
-              minuteText: '分',
-              secText: '秒',
-              lang: 'zh'
-          };
-          $('input:jqmData(role="datebox")').mobiscroll(opt1);
-          Highcharts.setOptions({
-
-        	  global: {
-        	  useUTC: false//中文区时间格式
-        	  }
-        	  // 中文时间显示字符串替换
-        	  ,
-        	  lang: {
-        	  months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-        	  shortMonths : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-        	  weekdays: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
-        	  thousandsSep:''// 去掉千位的逗号
-        	  }
-        	  });	  
-	 if("[ ['PTA',0.01780685890271], ['动力煤',0.055979033447025], ['橡胶',0.40441205864622], ['焦煤',0.048153353896929], ['玉米',0.0098532565156697], ['甲醇',0.034740644443272], ['白糖',0.13094181589665], ['聚丙烯',0.063118726784004], ['菜籽粕',0.015587397681718], ['螺纹钢',0.020813045570912], ['铁矿石',0.13152066673383], ['鸡蛋',0.067073141481059],]"=='[]'){
-		  $('#JYPZ').html("<center><font color='red'>对不起您选择的时间内没有交易品种！</font></center>");
-	 }else{
-    $("#JYPZ").highcharts({
-        chart: {
-            type: 'pie',
-            options3d: {
-                enabled: true,
-                alpha: 45,
-                beta: 0
-            }
-        },
-        exporting: {    
-            enabled: false //是否能导出趋势图图片  
-        },
-        credits:{
-        	text:'国泰君安期货'
-        },
-        title: {
-            text: '交易品种分析图'
-        },
-        tooltip: {
-            pointFormat: '比例: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                depth: 35,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}'
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Browser share',
-            data: [ ['PTA',0.01780685890271], ['动力煤',0.055979033447025], ['橡胶',0.40441205864622], ['焦煤',0.048153353896929], ['玉米',0.0098532565156697], ['甲醇',0.034740644443272], ['白糖',0.13094181589665], ['聚丙烯',0.063118726784004], ['菜籽粕',0.015587397681718], ['螺纹钢',0.020813045570912], ['铁矿石',0.13152066673383], ['鸡蛋',0.067073141481059],]
-        }]
-});		
-	 }
-	    
-		//品种多空盈亏	
-	 if("[-844, 4068, 134.96, 16587.4, -1182.27, -799.6, 758, -1854, 182, -83.13, -281.35, 176, -1206.03, 478.4, -434.5, -295.85]"=='[]'){
-		  $('#PZDK').html("<center><font color='red'>对不起您选择的时间内没有品种多空！</font></center>");
-	  }else{
-		  KDYK();
-	  }
-	   //每日收益率
-	 
-	
-	 if("[[1447113600000,0],[1447200000000,0],[1447286400000,0],[1447372800000,0],[1447632000000,0],[1447718400000,0],[1447804800000,0],[1447891200000,0],[1447977600000,0],[1448236800000,0],[1448323200000,0],[1448409600000,0],[1448496000000,0],[1448582400000,0],[1448841600000,0],[1448928000000,0],[1449014400000,0],[1449100800000,0],[1449187200000,0],[1449446400000,0],[1449532800000,0],[1449619200000,0],[1449705600000,0],[1449792000000,0],[1450051200000,0],[1450137600000,0],[1450224000000,0],[1450310400000,0],[1450396800000,0],[1450656000000,0],[1450742400000,0],[1450828800000,0],[1450915200000,0],[1451001600000,0],[1451260800000,0],[1451347200000,0],[1451433600000,0],[1451520000000,0],[1451865600000,0],[1451952000000,0],[1452038400000,0],[1452124800000,0],[1452211200000,0],[1452470400000,0],[1452556800000,0],[1452643200000,0],[1452729600000,0],[1452816000000,0],[1453075200000,0],[1453161600000,0],[1453248000000,0],[1453334400000,0],[1453420800000,0],[1453680000000,0],[1453766400000,0],[1453852800000,0],[1453939200000,0],[1454025600000,0],[1454284800000,0],[1454371200000,0],[1454457600000,0],[1454544000000,0],[1454630400000,0],[1455494400000,0],[1455580800000,0],[1455667200000,0],[1455753600000,0],[1455840000000,0],[1456099200000,0],[1456185600000,0],[1456272000000,0],[1456358400000,0],[1456444800000,0],[1456704000000,0],[1456790400000,0],[1456876800000,0],[1456963200000,0],[1457049600000,0],[1457308800000,0],[1457395200000,0],[1457481600000,0],[1457568000000,0],[1457654400000,0],[1457913600000,0],[1458000000000,0],[1458086400000,0],[1458172800000,0],[1458259200000,0],[1458518400000,0],[1458604800000,0],[1458691200000,0],[1458777600000,0],[1458864000000,0],[1459123200000,0],[1459209600000,0],[1459296000000,0],[1459382400000,0],[1459468800000,0],[1459814400000,0],[1459900800000,0],[1459987200000,0],[1460073600000,0],[1460332800000,0],[1460419200000,0],[1460505600000,0],[1460592000000,0],[1460678400000,0],[1460937600000,0],[1461024000000,0],[1461110400000,0],[1461196800000,0],[1461283200000,0],[1461542400000,0],[1461628800000,0],[1461715200000,0],[1461801600000,0],[1461888000000,0],[1462233600000,0],[1462320000000,0],[1462406400000,0],[1462492800000,0],[1462752000000,0],[1462838400000,-0.11285685570119],[1462924800000,0],[1463011200000,0],[1463097600000,0],[1463356800000,0],[1463443200000,0],[1463529600000,0],[1463616000000,0],[1463702400000,0],[1463961600000,0],[1464048000000,0],[1464134400000,0],[1464220800000,0],[1464307200000,0],[1464566400000,0],[1464652800000,0],[1464739200000,0],[1464825600000,0],[1464912000000,0],[1465171200000,0],[1465257600000,0],[1465344000000,0],[1465776000000,0],[1465862400000,0],[1465948800000,0],[1466035200000,0],[1466121600000,0],[1466380800000,0],[1466467200000,0],[1466553600000,0],[1466640000000,0],[1466726400000,0],[1466985600000,0],[1467072000000,0],[1467158400000,0],[1467244800000,0],[1467331200000,0],[1467590400000,0],[1467676800000,0],[1467763200000,0],[1467849600000,0],[1467936000000,0],[1468195200000,0],[1468281600000,0],[1468368000000,0],[1468454400000,0],[1468540800000,0],[1468800000000,0],[1468886400000,0],[1468972800000,0],[1469059200000,0],[1469145600000,0],[1469404800000,0],[1469491200000,0],[1469577600000,0],[1469664000000,0],[1469750400000,0],[1470009600000,0],[1470096000000,0],[1470182400000,0],[1470268800000,0],[1470355200000,0],[1470614400000,0],[1470700800000,0],[1470787200000,0],[1470873600000,0],[1470960000000,0],[1471219200000,0],[1471305600000,0],[1471392000000,0],[1471478400000,0],[1471564800000,0],[1471824000000,0],[1471910400000,0],[1471996800000,0],[1472083200000,0],[1472169600000,0],[1472428800000,0],[1472515200000,0],[1472601600000,0],[1472688000000,0],[1472774400000,0],[1473033600000,0],[1473120000000,0],[1473206400000,0],[1473292800000,0],[1473379200000,0],[1473724800000,0],[1473811200000,0],[1474243200000,0],[1474329600000,0],[1474416000000,0],[1474502400000,0],[1474588800000,0],[1474848000000,0],[1474934400000,0],[1475020800000,0],[1475107200000,0],[1475193600000,0],[1476057600000,0],[1476144000000,0],[1476230400000,0],[1476316800000,0],[1476403200000,0],[1476662400000,0],[1476748800000,0],[1476835200000,0],[1476921600000,0],[1477008000000,0],[1477267200000,0],[1477353600000,0],[1477440000000,0],[1477526400000,0],[1477612800000,0],[1477872000000,0],[1477958400000,0],[1478044800000,0],[1478131200000,0],[1478217600000,0],[1478476800000,0],[1478563200000,0],[1478649600000,0],[1478736000000,0],[1478822400000,0],[1479081600000,0],[1479168000000,0],[1479254400000,0],[1479340800000,0],[1479427200000,0],[1479686400000,0],[1479772800000,0],[1479859200000,0],[1479945600000,0],[1480032000000,0],[1480291200000,0],[1480377600000,0],[1480464000000,0],[1480550400000,0],[1480636800000,0],[1480896000000,0],[1480982400000,0],[1481068800000,0],[1481155200000,0],[1481241600000,0],[1481500800000,0],[1481587200000,0],[1481673600000,0],[1481760000000,0],[1481846400000,0],[1482105600000,0],[1482192000000,0],[1482278400000,0],[1482364800000,0],[1482451200000,0],[1482710400000,0],[1482796800000,0],[1482883200000,0],[1482969600000,0],[1483056000000,0],[1483401600000,0],[1483488000000,0],[1483574400000,0],[1483660800000,0],[1484006400000,-0.0032063334982682],[1484092800000,-0.0012841768758811],[1484179200000,-0.056980028659006],[1484265600000,-0.0057977339293404],[1484524800000,-0.004771263001029],[1484611200000,-0.0021307275955325],[1484697600000,-0.0080072898366673],[1484784000000,-0.037668979003849],[1484870400000,-0.090701020470359],[1485129600000,-0.023330768904362],[1485216000000,0.10434749756793],[1485388800000,0.038591413410516],[1486080000000,-0.10881826023489],[1486339200000,-0.1446742610379],[1486425600000,0],[1486512000000,0],[1486598400000,0],[1486684800000,0.14879542613607],[1486944000000,0],[1487030400000,0],[1487116800000,0],[1487203200000,0.017215741734777],[1487289600000,0.018473790756311],[1487548800000,0.028085729348358],[1487635200000,-0.002390366141488],[1487721600000,0.0015021495181855],[1487808000000,0.018460263993313],[1487894400000,-0.082131894760155],[1488153600000,0.087629817094356],[1488240000000,0.063547793898617],[1488326400000,0.024007003643196],[1488412800000,0.016150434524836],[1488499200000,-0.025122369008635],[1488758400000,0.084146176634395],[1488844800000,-0.007140301759001],[1488931200000,-0.06373713469196],[1489017600000,0.083434072250198],[1489104000000,0.011001272236016],[1489363200000,0.027808434225557],[1489449600000,-0.032937797440074],[1489536000000,0.0084071547458487],[1489622400000,-0.0083370637606866],[1489708800000,-0.041863872141617],[1489968000000,0],[1490054400000,-0.00035575354158171],[1490140800000,0.072029130877405],[1490227200000,0.041037691285847],[1490313600000,-0.0065420402409282],[1490572800000,0.06965031153529],]"=='[]'){
-		  $('#MRSYL').html("<center><font color='red'>对不起您选择的时间内没有收益记录！</font></center>");
-	  }else{
-		$.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
-			// Create the chart
-			$('#MRSYL').highcharts('StockChart', {
-				rangeSelector : {
-					inputEnabled: $('#container').width() > 480,
-					selected : 1
-				},
-				 exporting: {    
-			            enabled: false //是否能导出趋势图图片  
-			        },
-			        tooltip: {  
-			            xDateFormat: '%Y-%m-%d, %A'//鼠标移动到趋势线上时显示的日期格式  
-			        },  
-			    rangeSelector: {
-			    	buttons: [{
-                        type: 'month',
-                        count: 1,
-                        text: '1月'
-                    }, {
-                        type: 'month',
-                        count: 3,
-                        text: '3月'
-                    }, {
-                        type: 'month',
-                        count: 6,
-                        text: '6月'
-                    }, {
-                        type: 'year',
-                        count: 1,
-                        text: '1年'
-                    },{
-                        type: 'year',
-                        count: 3,
-                        text: '3年'
-                    }, {
-                        type: 'all',
-                        text: '所有'
-                    }],
-                // 默认选择域：0（缩放按钮中的第一个）、1（缩放按钮中的第二个）……
-                selected: 0,
-                // 是否允许input标签选框
-                inputEnabled: false
-            },
-            xAxis : {  
-                type : 'datetime',  
-                dateTimeLabelFormats : {  
-                    second : '%Y-%m-%d<br/>%H:%M:%S',  
-                    minute : '%Y-%m-%d<br/>%H:%M',  
-                    hour : '%Y-%m-%d<br/>%H:%M',  
-                    day : '%Y<br/>%m-%d',  
-                    week : '%Y<br/>%m-%d',  
-                    month : '%Y-%m',  
-                    year : '%Y'  
-                }  
-            },
-            credits:{
-            	text:'国泰君安期货'
-            },
-				title : {
-					text : '每日收益率分析'
-				},
-				series : [{
-					name : '收益率',
-					data : [[1447113600000,0],[1447200000000,0],[1447286400000,0],[1447372800000,0],[1447632000000,0],[1447718400000,0],[1447804800000,0],[1447891200000,0],[1447977600000,0],[1448236800000,0],[1448323200000,0],[1448409600000,0],[1448496000000,0],[1448582400000,0],[1448841600000,0],[1448928000000,0],[1449014400000,0],[1449100800000,0],[1449187200000,0],[1449446400000,0],[1449532800000,0],[1449619200000,0],[1449705600000,0],[1449792000000,0],[1450051200000,0],[1450137600000,0],[1450224000000,0],[1450310400000,0],[1450396800000,0],[1450656000000,0],[1450742400000,0],[1450828800000,0],[1450915200000,0],[1451001600000,0],[1451260800000,0],[1451347200000,0],[1451433600000,0],[1451520000000,0],[1451865600000,0],[1451952000000,0],[1452038400000,0],[1452124800000,0],[1452211200000,0],[1452470400000,0],[1452556800000,0],[1452643200000,0],[1452729600000,0],[1452816000000,0],[1453075200000,0],[1453161600000,0],[1453248000000,0],[1453334400000,0],[1453420800000,0],[1453680000000,0],[1453766400000,0],[1453852800000,0],[1453939200000,0],[1454025600000,0],[1454284800000,0],[1454371200000,0],[1454457600000,0],[1454544000000,0],[1454630400000,0],[1455494400000,0],[1455580800000,0],[1455667200000,0],[1455753600000,0],[1455840000000,0],[1456099200000,0],[1456185600000,0],[1456272000000,0],[1456358400000,0],[1456444800000,0],[1456704000000,0],[1456790400000,0],[1456876800000,0],[1456963200000,0],[1457049600000,0],[1457308800000,0],[1457395200000,0],[1457481600000,0],[1457568000000,0],[1457654400000,0],[1457913600000,0],[1458000000000,0],[1458086400000,0],[1458172800000,0],[1458259200000,0],[1458518400000,0],[1458604800000,0],[1458691200000,0],[1458777600000,0],[1458864000000,0],[1459123200000,0],[1459209600000,0],[1459296000000,0],[1459382400000,0],[1459468800000,0],[1459814400000,0],[1459900800000,0],[1459987200000,0],[1460073600000,0],[1460332800000,0],[1460419200000,0],[1460505600000,0],[1460592000000,0],[1460678400000,0],[1460937600000,0],[1461024000000,0],[1461110400000,0],[1461196800000,0],[1461283200000,0],[1461542400000,0],[1461628800000,0],[1461715200000,0],[1461801600000,0],[1461888000000,0],[1462233600000,0],[1462320000000,0],[1462406400000,0],[1462492800000,0],[1462752000000,0],[1462838400000,-0.11285685570119],[1462924800000,0],[1463011200000,0],[1463097600000,0],[1463356800000,0],[1463443200000,0],[1463529600000,0],[1463616000000,0],[1463702400000,0],[1463961600000,0],[1464048000000,0],[1464134400000,0],[1464220800000,0],[1464307200000,0],[1464566400000,0],[1464652800000,0],[1464739200000,0],[1464825600000,0],[1464912000000,0],[1465171200000,0],[1465257600000,0],[1465344000000,0],[1465776000000,0],[1465862400000,0],[1465948800000,0],[1466035200000,0],[1466121600000,0],[1466380800000,0],[1466467200000,0],[1466553600000,0],[1466640000000,0],[1466726400000,0],[1466985600000,0],[1467072000000,0],[1467158400000,0],[1467244800000,0],[1467331200000,0],[1467590400000,0],[1467676800000,0],[1467763200000,0],[1467849600000,0],[1467936000000,0],[1468195200000,0],[1468281600000,0],[1468368000000,0],[1468454400000,0],[1468540800000,0],[1468800000000,0],[1468886400000,0],[1468972800000,0],[1469059200000,0],[1469145600000,0],[1469404800000,0],[1469491200000,0],[1469577600000,0],[1469664000000,0],[1469750400000,0],[1470009600000,0],[1470096000000,0],[1470182400000,0],[1470268800000,0],[1470355200000,0],[1470614400000,0],[1470700800000,0],[1470787200000,0],[1470873600000,0],[1470960000000,0],[1471219200000,0],[1471305600000,0],[1471392000000,0],[1471478400000,0],[1471564800000,0],[1471824000000,0],[1471910400000,0],[1471996800000,0],[1472083200000,0],[1472169600000,0],[1472428800000,0],[1472515200000,0],[1472601600000,0],[1472688000000,0],[1472774400000,0],[1473033600000,0],[1473120000000,0],[1473206400000,0],[1473292800000,0],[1473379200000,0],[1473724800000,0],[1473811200000,0],[1474243200000,0],[1474329600000,0],[1474416000000,0],[1474502400000,0],[1474588800000,0],[1474848000000,0],[1474934400000,0],[1475020800000,0],[1475107200000,0],[1475193600000,0],[1476057600000,0],[1476144000000,0],[1476230400000,0],[1476316800000,0],[1476403200000,0],[1476662400000,0],[1476748800000,0],[1476835200000,0],[1476921600000,0],[1477008000000,0],[1477267200000,0],[1477353600000,0],[1477440000000,0],[1477526400000,0],[1477612800000,0],[1477872000000,0],[1477958400000,0],[1478044800000,0],[1478131200000,0],[1478217600000,0],[1478476800000,0],[1478563200000,0],[1478649600000,0],[1478736000000,0],[1478822400000,0],[1479081600000,0],[1479168000000,0],[1479254400000,0],[1479340800000,0],[1479427200000,0],[1479686400000,0],[1479772800000,0],[1479859200000,0],[1479945600000,0],[1480032000000,0],[1480291200000,0],[1480377600000,0],[1480464000000,0],[1480550400000,0],[1480636800000,0],[1480896000000,0],[1480982400000,0],[1481068800000,0],[1481155200000,0],[1481241600000,0],[1481500800000,0],[1481587200000,0],[1481673600000,0],[1481760000000,0],[1481846400000,0],[1482105600000,0],[1482192000000,0],[1482278400000,0],[1482364800000,0],[1482451200000,0],[1482710400000,0],[1482796800000,0],[1482883200000,0],[1482969600000,0],[1483056000000,0],[1483401600000,0],[1483488000000,0],[1483574400000,0],[1483660800000,0],[1484006400000,-0.0032063334982682],[1484092800000,-0.0012841768758811],[1484179200000,-0.056980028659006],[1484265600000,-0.0057977339293404],[1484524800000,-0.004771263001029],[1484611200000,-0.0021307275955325],[1484697600000,-0.0080072898366673],[1484784000000,-0.037668979003849],[1484870400000,-0.090701020470359],[1485129600000,-0.023330768904362],[1485216000000,0.10434749756793],[1485388800000,0.038591413410516],[1486080000000,-0.10881826023489],[1486339200000,-0.1446742610379],[1486425600000,0],[1486512000000,0],[1486598400000,0],[1486684800000,0.14879542613607],[1486944000000,0],[1487030400000,0],[1487116800000,0],[1487203200000,0.017215741734777],[1487289600000,0.018473790756311],[1487548800000,0.028085729348358],[1487635200000,-0.002390366141488],[1487721600000,0.0015021495181855],[1487808000000,0.018460263993313],[1487894400000,-0.082131894760155],[1488153600000,0.087629817094356],[1488240000000,0.063547793898617],[1488326400000,0.024007003643196],[1488412800000,0.016150434524836],[1488499200000,-0.025122369008635],[1488758400000,0.084146176634395],[1488844800000,-0.007140301759001],[1488931200000,-0.06373713469196],[1489017600000,0.083434072250198],[1489104000000,0.011001272236016],[1489363200000,0.027808434225557],[1489449600000,-0.032937797440074],[1489536000000,0.0084071547458487],[1489622400000,-0.0083370637606866],[1489708800000,-0.041863872141617],[1489968000000,0],[1490054400000,-0.00035575354158171],[1490140800000,0.072029130877405],[1490227200000,0.041037691285847],[1490313600000,-0.0065420402409282],[1490572800000,0.06965031153529],],
-					marker : {
-						enabled : true,
-						radius : 3
-					},
-					shadow : true,
-					tooltip : {
-						valueDecimals : 2
-					}
-				}]
-			});
-		});
-	  }
+<html lang="en">
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>Neuralink Inc.</title> 
+ </head> 
+ <body> 
+  <script src="https://code.highcharts.com/highcharts.js"></script> 
+  <script src="https://code.highcharts.com/modules/exporting.js"></script> 
+  <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+  <script>
+Highcharts.chart('container', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+  },
+  title: {
+    text: 'Browser market shares January, 2015 to May, 2015'
+  },
+  tooltip: {
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: true,
+        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+        style: {
+          color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+        }
+      }
+    }
+  },
+  series: [{
+    name: 'Brands',
+    colorByPoint: true,
+    data: [{
+      name: 'AAr',
+      y: 16.33
+    }, {
+      name: 'Chrome',
+      y: 14.03,
+      sliced: true,
+      selected: true
+    }, {
+      name: 'Firefox',
+      y: 10.38
+    }, {
+      name: 'Safari',
+      y: 14.77
+    }, {
+      name: 'Opera',
+      y: 4.91
+    }, {
+      name: 'A',
+      y: 5.2
+    }]
+  }]
 });
-  function KDYK(data){
-	  var key="";
-	  var value="";
-	  if(data!=null||data!=undefined){
-		  var keys=data.key;
-	  }else{
-		  key=['PTA多单', '动力煤多单', '橡胶多单', '橡胶空单', '焦煤空单', '玉米空单', '甲醇空单', '白糖多单', '白糖空单', '聚丙烯多单', '聚丙烯空单', '菜籽粕多单', '螺纹钢多单', '铁矿石多单', '铁矿石空单', '鸡蛋空单'];
-		  value=[-844, 4068, 134.96, 16587.4, -1182.27, -799.6, 758, -1854, 182, -83.13, -281.35, 176, -1206.03, 478.4, -434.5, -295.85];
-	  }
-	  $('#PZDK').highcharts({
-	        chart: {
-	            type: 'column',
-	            margin: 47,
-	            options3d: {
-	                enabled: false,
-	                alpha: 0,
-	                beta: 20,
-	                depth: 70
-	            }
-	        },
-	        title: {
-	            text: '品种多空盈亏分析图'
-	        },
-	        exporting: {    
-	            enabled: false //是否能导出趋势图图片  
-	        },
-	        plotOptions: {
-	            column: {
-	                depth: 25
-	            },
-	            enabled:true
-	        },
-	        credits:{
-	        	text:'国泰君安期货'
-	        },
-	        xAxis: {
-	           	categories:key
-	            //categories:['菜籽粕多单','菜籽粕空单']
-	        },
-	        yAxis: {
-	            title:false,
-	            opposite: false
-	        },
-	        legend:{
-	        	  enabled:false
-	        },
-	       
-	        series: [{
-	            name: '数值',
-	            data: value
-	           	//data: [20,30]
-	        }]
-	    });
-  }
-  function byTimeQuery(){
-	  var startTime=$("#startTime").val();
-	  var endTime=$("#endTime").val();
-	  if(startTime==''){
-		  $.zxxbox.remind("请选择半年以内的开始时间");
-		  return false;
-	  }
-	  if(endTime==''){
-		  $.zxxbox.remind("请选择半年以内的结束时间");
-		  return false;
-	  }
-	  if(GetDateDiff(startTime,endTime, "day")>183){
-		  $.zxxbox.remind("您选择的时间大于半年！");
-		  return false;
-	  }
-	  window.location.href="http://wx1.gtjaqh.com:80/gt_weixin/JYFX?openId=o4sjVt4xzez0WO36LBqx_oRvxH30&startTime="+startTime+"&endTime="+endTime;
-	  
-  }
-  function getvariety(){
-	  $.post("http://wx1.gtjaqh.com:80/gt_weixin/JYFX",{"type":"exchange","exchangeId":$("#exchangeId").val()},function(data){
-		 var varietys="<option value=''>全部</option>";
-		 for(var i=0;i<data.length;i++){
-			 varietys+="<option value='"+data[i].name+"'>"+data[i].name+"</option>";
-		 }
-		 $("#varietyName").html(varietys);
-	  });
-  }
-  function queryVariety(){
-	  $.post("http://wx1.gtjaqh.com:80/gt_weixin/JYFX",{"type":"variety","varietyName":$("#varietyName").val(),"cardcode":"50600038"},function(data){
-		  KDYK(data);
-	  });
-  }
-  function GetDateDiff(startTime, endTime, diffType) {
-	//将xxxx-xx-xx的时间格式，转换为 xxxx/xx/xx的格式
-	startTime = startTime.replace(/\-/g, "/");
-	endTime = endTime.replace(/\-/g, "/");
-
-	//将计算间隔类性字符转换为小写
-	diffType = diffType.toLowerCase();
-	var sTime =new Date(startTime); //开始时间
-	var eTime =new Date(endTime); //结束时间
-	//作为除数的数字
-	var divNum =1;
-	switch (diffType) {
-	case"second":
-	divNum =1000;
-	break;
-	case"minute":
-	divNum =1000*60;
-	break;
-	case"hour":
-	divNum =1000*3600;
-	break;
-	case"day":
-	divNum =1000*3600*24;
-	break;
-	default:
-	break;
-	}
-	return parseInt((eTime.getTime() - sTime.getTime()) / parseInt(divNum));
-	}
-  </script>
-<title>国泰君安期货</title>
-</head>
-<body class="ui-mobile-viewport ui-overlay-a"><div data-role="page" data-url="/gt_weixin/JYFX?openId=o4sjVt4xzez0WO36LBqx_oRvxH30" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 534px;">
-	<div class="wrap">
-		<header class="header">
-			<h1>
-				<img src="./charts_reports_files/logo.png">
-			</h1>
-			<div class="right">账户分析</div>
-		</header>
-
-		<section class="account">
-			<h2 class="tit">50600038，您好！</h2>
-			<div class="div-list">交易分析默认为您的所有历史交易数据<br>请您选择半年以内的时间查看更详细的交易分析</div>
-
-			<div class="div-list">
-				<div class="date-time">
-					<span><div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input data-role="datebox" class="select-input3" type="text" readonly="" id="startTime" value="" placeholder="开始日期"></div><img src="./charts_reports_files/time.png" class="img"></span> <span class="left4"><div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input data-role="datebox" class="select-input3" type="text" readonly="" id="endTime" value="" placeholder="结束日期"></div><img src="./charts_reports_files/time.png" class="img"></span>
-				</div>
-				<a href="javascript:byTimeQuery()" class="quedButton fl ui-link">确定</a>
-			</div>
-			<div class="div-list2">
-				<table class="table" cellpadding="0" cellspacing="0">
-					<tbody><tr>
-						<td width="46%" class="left4">日均权益:5484.05</td>
-						<td width="50%">累计盈亏:15014.03</td>
-					</tr>
-					<tr>
-						<td class="left4" width="46%">累计手续费:1280.97</td>
-						<td>交易金额:1352500</td>
-					</tr>
-				</tbody></table>
-			</div>
-
-			<div class="chart-content" id="JYPZ" style="min-width: 100%; height: 400px" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 1000px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1000" height="400"><desc>Created with Highstock 2.0.3</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="980" height="332"></rect></clippath></defs><rect x="0" y="0" width="1000" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><path fill="rgba(67,67,72,0.25)" d="M 0 0"></path><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,53) scale(1 1)" style="cursor:pointer;"><path fill="#7cb5ec" d="M 489.9749481959455 43.00000255119062 A 123 123 0 0 1 503.6000829178686 43.75419130036768 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#434348" d="M 503.722321906153 43.76785250391812 A 123 123 0 0 1 544.913598902316 55.938668663351365 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#90ed7d" d="M 545.023632758512 55.993637283762496 A 123 123 0 0 1 506.89536181092126 287.8340951838937 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#f7a35c" d="M 506.7735192883628 287.8509296258462 A 123 123 0 0 1 469.89358758188195 287.3455074556638 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#8085e9" d="M 469.77225214785597 287.325340373848 A 123 123 0 0 1 462.413617345785 285.866557020944 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#f15c80" d="M 462.293764601932 285.838910709614 A 123 123 0 0 1 437.0310697956413 277.01032579452135 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#e4d354" d="M 436.9200859728114 276.95730136798693 A 123 123 0 0 1 372.62495920563 202.77090967762393 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#8085e8" d="M 372.58824698959637 202.65351627093875 A 123 123 0 0 1 367.53619331601607 154.52759604669475 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#8d4653" d="M 367.5477269499555 154.40513799662293 A 123 123 0 0 1 369.2462908423097 142.6003905019775 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#91e8e1" d="M 369.26975082475735 142.4796485127492 A 123 123 0 0 1 373.3375260983018 127.02735339836948 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#7cb5ec" d="M 373.37655706964006 126.91071043023322 A 123 123 0 0 1 439.5773014076364 53.810198918691114 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#434348" d="M 439.68951640136663 53.759832323398385 A 123 123 0 0 1 489.82915546761717 43.000118649871226 L 490 166 A 0 0 0 0 0 490 166 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(10,53) scale(1 1)"></g></g><text x="500" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:936px;" y="25">交易品种分析图</text><g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,53) scale(1 1)" opacity="1" style="cursor:pointer;"><path fill="none" d="M 503.5546466733298 13 C 498.5546466733298 13 498.107344886489 21.226829284941346 497.49230492958293 32.209621546083724 L 496.87726497267687 43.1924138072261" stroke="#7cb5ec" stroke-width="1"></path><path fill="none" d="M 580.3229160308061 39 C 575.3229160308061 39 531.1499396850317 26.961579180723376 528.028220122719 37.509321449771946 L 524.9065005604062 48.057063718820515" stroke="#434348" stroke-width="1"></path><path fill="none" d="M 645.9642122960395 190.87582372176448 C 640.9642122960395 190.87582372176448 633.0706587119329 189.5751270565742 622.2170225337862 187.78666914193752 L 611.3633863556396 185.99821122730086" stroke="#90ed7d" stroke-width="1"></path><path fill="none" d="M 482.81341238142716 318.9843744785274 C 487.81341238142716 318.9843744785274 487.92774376017434 310.985191499258 488.0849494059542 299.98631490276256 L 488.2421550517341 288.9874383062671" stroke="#f7a35c" stroke-width="1"></path><path fill="none" d="M 375.63821508406147 273 C 380.63821508406147 273 461.6869439070626 308.2088986480037 463.83483092100954 297.4206373712586 L 465.9827179349565 286.63237609451346" stroke="#8085e9" stroke-width="1"></path><path fill="none" d="M 355.2001540832964 247 C 360.2001540832964 247 442.10656489798885 302.86204321918285 445.73985997469316 292.4794054577276 L 449.3731550513975 282.0967676962723" stroke="#f15c80" stroke-width="1"></path><path fill="none" d="M 342.227453619402 221 C 347.227453619402 221 380.38500865906406 260.9186687292154 388.7006286918247 253.7179421359646 L 397.01624872458535 246.51721554271376" stroke="#e4d354" stroke-width="1"></path><path fill="none" d="M 332.82682826527355 181.88476641922827 C 337.82682826527355 181.88476641922827 345.78359541480177 181.05419039730785 356.724150245403 179.91214836716725 L 367.6647050760042 178.77010633702665" stroke="#8085e8" stroke-width="1"></path><path fill="none" d="M 333.7386367904877 143 C 338.7386367904877 143 346.48526367784467 145.29926430335803 357.37258850228403 146.86966494241364 L 368.2599133267234 148.44006558146924" stroke="#8d4653" stroke-width="1"></path><path fill="none" d="M 340.0586325440525 117 C 345.0586325440525 117 349.7847074456332 129.0585363866923 360.4217296394128 131.8609922470122 L 371.05875183319233 134.6634481073321" stroke="#91e8e1" stroke-width="1"></path><path fill="none" d="M 371.6209376952324 63.26642111319384 C 376.6209376952324 63.26642111319384 382.5492546784882 68.63811151250395 390.70069053046495 76.02418581155538 L 398.8521263824417 83.41026011060681" stroke="#7cb5ec" stroke-width="1"></path><path fill="none" d="M 452.9984290856308 16.384160400669472 C 457.9984290856308 16.384160400669472 459.67171383932333 24.207210837235777 461.97248037565055 34.96390518751444 L 464.27324691197776 45.720599537793106" stroke="#434348" stroke-width="1"></path><g zIndex="1" style="cursor:pointer;" transform="translate(509,3)"><text x="3" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">PTA</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(585,29)"><text x="3" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">动力煤</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(651,181)"><text x="3" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">橡胶</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(447,309)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">焦煤</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(341,263)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">玉米</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(320,237)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">甲醇</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(307,211)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">白糖</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(284,172)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">聚丙烯</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(286,133)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">菜籽粕</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(292,107)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">螺纹钢</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(324,53)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">铁矿石</text></g><g zIndex="1" style="cursor:pointer;" transform="translate(417,6)"><text x="0" zIndex="1" style="font-size:11px;color:#606060;fill:#606060;" y="17">鸡蛋</text></g></g><g class="highcharts-legend" zIndex="7"><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(592,26)" opacity="0" visibility="hidden"><path fill="none" d="M 3.5 0.5 L 79.5 0.5 C 82.5 0.5 82.5 0.5 82.5 3.5 L 82.5 50.5 C 82.5 53.5 82.5 53.5 79.5 53.5 L 3.5 53.5 C 0.5 53.5 0.5 53.5 0.5 50.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="82" height="53"></path><path fill="none" d="M 3.5 0.5 L 79.5 0.5 C 82.5 0.5 82.5 0.5 82.5 3.5 L 82.5 50.5 C 82.5 53.5 82.5 53.5 79.5 53.5 L 3.5 53.5 C 0.5 53.5 0.5 53.5 0.5 50.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="82" height="53"></path><path fill="none" d="M 3.5 0.5 L 79.5 0.5 C 82.5 0.5 82.5 0.5 82.5 3.5 L 82.5 50.5 C 82.5 53.5 82.5 53.5 79.5 53.5 L 3.5 53.5 C 0.5 53.5 0.5 53.5 0.5 50.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="82" height="53"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 79.5 0.5 C 82.5 0.5 82.5 0.5 82.5 3.5 L 82.5 50.5 C 82.5 53.5 82.5 53.5 79.5 53.5 L 3.5 53.5 C 0.5 53.5 0.5 53.5 0.5 50.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#434348" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="22"><tspan style="font-size: 10px">动力煤</tspan><tspan x="8" dy="17">比例: </tspan><tspan style="font-weight:bold" dx="0">5.6%</tspan></text></g><text x="990" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">国泰君安期货</text></svg></div></div>
-			<table class="table tabCenter" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-					<td width="20%">品种</td>
-					<td width="20%">比例</td>
-					<td width="20%">交易额</td>
-					<td width="20%">手续费</td>
-					<td width="20%">盈亏</td>
-				</tr>
-				<tr>
-						<td>PTA</td>
-						<td>0.02</td>
-						<td>55680</td>
-						<td>24</td>
-						<td>-494</td>
-					</tr>
-				<tr>
-						<td>动力煤</td>
-						<td>0.06</td>
-						<td>175040</td>
-						<td>72</td>
-						<td>-92</td>
-					</tr>
-				<tr>
-						<td>橡胶</td>
-						<td>0.40</td>
-						<td>1264550</td>
-						<td>227.64</td>
-						<td>-3427.64</td>
-					</tr>
-				<tr>
-						<td>焦煤</td>
-						<td>0.05</td>
-						<td>150570</td>
-						<td>72.27</td>
-						<td>-1212.27</td>
-					</tr>
-				<tr>
-						<td>玉米</td>
-						<td>0.01</td>
-						<td>30810</td>
-						<td>9.6</td>
-						<td>-129.6</td>
-					</tr>
-				<tr>
-						<td>甲醇</td>
-						<td>0.03</td>
-						<td>108630</td>
-						<td>32</td>
-						<td>-492</td>
-					</tr>
-				<tr>
-						<td>白糖</td>
-						<td>0.13</td>
-						<td>409440</td>
-						<td>72</td>
-						<td>-2072</td>
-					</tr>
-				<tr>
-						<td>聚丙烯</td>
-						<td>0.06</td>
-						<td>197365</td>
-						<td>189.48</td>
-						<td>-364.48</td>
-					</tr>
-				<tr>
-						<td>菜籽粕</td>
-						<td>0.02</td>
-						<td>48740</td>
-						<td>24</td>
-						<td>-374</td>
-					</tr>
-				<tr>
-						<td>螺纹钢</td>
-						<td>0.02</td>
-						<td>65080</td>
-						<td>26.03</td>
-						<td>-796.03</td>
-					</tr>
-				<tr>
-						<td>铁矿石</td>
-						<td>0.13</td>
-						<td>411250</td>
-						<td>406.1</td>
-						<td>-756.1</td>
-					</tr>
-				<tr>
-						<td>鸡蛋</td>
-						<td>0.07</td>
-						<td>209730</td>
-						<td>125.85</td>
-						<td>-295.85</td>
-					</tr>
-				</tbody></table>
-			<hr>
-			<br>
-			<div class="chart-content" id="MRSYL" style="min-width: 100%; height: 400px"></div>
-			<hr>
-			<br>
-			<div class="chart-content" id="PZDK" style="min-width: 100%; height: 300px" data-highcharts-chart="1"><div class="highcharts-container" id="highcharts-2" style="position: relative; overflow: hidden; width: 1000px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1000" height="300"><desc>Created with Highstock 2.0.3</desc><defs><clippath id="highcharts-3"><rect x="0" y="0" width="906" height="206"></rect></clippath></defs><rect x="0" y="0" width="1000" height="300" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 47 47.5 L 953 47.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 47 88.5 L 953 88.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 47 129.5 L 953 129.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 47 171.5 L 953 171.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 47 212.5 L 953 212.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 47 253.5 L 953 253.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 159.5 253 L 159.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 216.5 253 L 216.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 273.5 253 L 273.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 329.5 253 L 329.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 386.5 253 L 386.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 442.5 253 L 442.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 499.5 253 L 499.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 556.5 253 L 556.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 612.5 253 L 612.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 669.5 253 L 669.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 726.5 253 L 726.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 782.5 253 L 782.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 839.5 253 L 839.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 895.5 253 L 895.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 953.5 253 L 953.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 103.5 253 L 103.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 46.5 253 L 46.5 263" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 47 253.5 L 953 253.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(47,47) scale(1 1)" style="" clip-path="url(http://wx1.gtjaqh.com/gt_weixin/JYFX?openId=o4sjVt4xzez0WO36LBqx_oRvxH30#highcharts-3)"><rect x="14.5" y="165.5" width="28" height="7" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="70.5" y="131.5" width="28" height="34" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="127.5" y="164.5" width="28" height="1" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="184.5" y="28.5" width="28" height="137" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="240.5" y="165.5" width="28" height="10" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="297.5" y="165.5" width="28" height="6" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="353.5" y="159.5" width="28" height="6" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="410.5" y="165.5" width="28" height="15" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="467.5" y="163.5" width="28" height="2" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="523.5" y="165.5" width="28" height="0" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="580.5" y="165.5" width="28" height="2" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="637.5" y="163.5" width="28" height="2" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="693.5" y="165.5" width="28" height="10" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="750.5" y="161.5" width="28" height="4" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="806.5" y="165.5" width="28" height="3" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect><rect x="863.5" y="165.5" width="28" height="2" fill="#7cb5ec" rx="0" ry="0" stroke="#FFFFFF" stroke-width="1"></rect></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(47,47) scale(1 1)" clip-path="none"></g></g><text x="500" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:936px;" y="25">品种多空盈亏分析图</text><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="75.3125" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">PTA多单</text><text x="131.9375" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">动力煤多单</text><text x="188.5625" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">橡胶多单</text><text x="245.1875" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">橡胶空单</text><text x="301.8125" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">焦煤空单</text><text x="358.4375" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">玉米空单</text><text x="415.0625" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">甲醇空单</text><text x="471.6875" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">白糖多单</text><text x="528.3125" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">白糖空单</text><text x="584.9375" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">聚丙烯多单</text><text x="641.5625" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">聚丙烯空单</text><text x="698.1875" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">菜籽粕多单</text><text x="754.8125" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">螺纹钢多单</text><text x="811.4375" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">铁矿石多单</text><text x="868.0625" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="275" opacity="1">铁矿石空单</text><text x="924.6875" text-anchor="middle" style="width:37px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="295" opacity="1">鸡蛋空单</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="257" opacity="1">-5k</text><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="215.8" opacity="1">0k</text><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="174.6" opacity="1">5k</text><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="133.39999999999998" opacity="1">10k</text><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="92.19999999999999" opacity="1">15k</text><text x="32" text-anchor="end" style="width:27px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="50.99999999999997" opacity="1">20k</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="22"></text></g><text x="990" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="295">国泰君安期货</text></svg></div></div>
-			<div class="div-list">以上为微信版简要交易诊断内容，若您需要进行详细的交易诊断，请您和您的所属营业部进行联系。谢谢。</div>
-			<br>
-
-		</section>
-
-
-	</div>
-
-
-
-</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-top.png&quot;);"></div></div></body></html>
+</script>  
+ </body>
+</html>
