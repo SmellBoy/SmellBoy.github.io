@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+    <body> 
+    <div id="con_rjpzo76YId" class="HighChart" style="margin:auto; vertical:middle; width:80%; height:60%;"></div></body> 
+    <footer> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+        <script src="https://code.highcharts.com/highcharts.js"></script> 
+        <script src="https://code.highcharts.com/highcharts-more.js"></script> 
+        <script src="https://code.highcharts.com/modules/exporting.js"></script> 
+        <script src="https://code.highcharts.com/modules/heatmap.js"></script> 
+        <script> Highcharts.setOptions({ lang:{ 
+            //weekdays: ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六","星期天"] 
+        weekdays: ["周日","周一", "周二", "周三", "周四", "周五", "周六"] }});</script> 
+        <script> 
+            $(function () { 
+            $('#con_rjpzo76YId').highcharts({ 
+            chart:{type:'line',zoomType:'x'}, 
+            credits:{enabled: 0}, 
+            title:{text:'login'}, 
+            xAxis:{title:{text:''},type:'datetime',gridLineWidth: 1,dateTimeLabelFormats:{day:'%a %m-%d'}}, 
+            yAxis:{title:{text:''},dateTimeLabelFormats:{day:'%Y-%m-%d'}}, 
+            series:[{name:'上周',data:[[1492387200000,15025],[1492473600000,13175],[1492560000000,14275],[1492646400000,16025],[1492732800000,27075],[1492819200000,27595],[1492905600000,14840]],type:'column',color:'#7cb5ec'},{name:'上上周',data:[[1492387200000,17585],[1492473600000,13115],[1492560000000,14685],[1492646400000,13475],[1492732800000,27765],[1492819200000,29115],[1492905600000,15590]],type:'spline',color:'#90ed7d'}], 
+            tooltip:{dateTimeLabelFormats:{day:'%Y-%m-%d'}}, 
+            }); 
+            }); 
+        </script> 
+    </footer> 
+</html> 
