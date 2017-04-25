@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 <html> 
+    <meta charset="gb2312">
     <body> 
     <div id="con_rjpzo76YId" class="HighChart" style="margin:auto; vertical:middle; width:80%; height:60%;"></div></body> 
     <footer> 
@@ -9,8 +10,8 @@
         <script src="https://code.highcharts.com/modules/exporting.js"></script> 
         <script src="https://code.highcharts.com/modules/heatmap.js"></script> 
         <script> Highcharts.setOptions({ lang:{ 
-            //weekdays: ["ĞÇÆÚÒ»", "ĞÇÆÚ¶ş", "ĞÇÆÚÈı", "ĞÇÆÚËÄ", "ĞÇÆÚÎå", "ĞÇÆÚÁù","ĞÇÆÚÌì"] 
-        weekdays: ["ÖÜÈÕ","ÖÜÒ»", "ÖÜ¶ş", "ÖÜÈı", "ÖÜËÄ", "ÖÜÎå", "ÖÜÁù"] }});</script> 
+            //weekdays: ["æ˜ŸæœŸä¸€", "æ˜ŸæœŸäºŒ", "æ˜ŸæœŸä¸‰", "æ˜ŸæœŸå››", "æ˜ŸæœŸäº”", "æ˜ŸæœŸå…­","æ˜ŸæœŸå¤©"] 
+        weekdays: ["å‘¨æ—¥","å‘¨ä¸€", "å‘¨äºŒ", "å‘¨ä¸‰", "å‘¨å››", "å‘¨äº”", "å‘¨å…­"] }});</script> 
         <script> 
             $(function () { 
             $('#con_rjpzo76YId').highcharts({ 
@@ -19,7 +20,7 @@
             title:{text:'login'}, 
             xAxis:{title:{text:''},type:'datetime',gridLineWidth: 1,dateTimeLabelFormats:{day:'%a %m-%d'}}, 
             yAxis:{title:{text:''},dateTimeLabelFormats:{day:'%Y-%m-%d'}}, 
-            series:[{name:'ÉÏÖÜ',data:[[1492387200000,15025],[1492473600000,13175],[1492560000000,14275],[1492646400000,16025],[1492732800000,27075],[1492819200000,27595],[1492905600000,14840]],type:'column',color:'#7cb5ec'},{name:'ÉÏÉÏÖÜ',data:[[1492387200000,17585],[1492473600000,13115],[1492560000000,14685],[1492646400000,13475],[1492732800000,27765],[1492819200000,29115],[1492905600000,15590]],type:'spline',color:'#90ed7d'}], 
+            series:[{name:'ä¸Šå‘¨',data:[[1492387200000,15025],[1492473600000,13175],[1492560000000,14275],[1492646400000,16025],[1492732800000,27075],[1492819200000,27595],[1492905600000,14840]],type:'column',color:'#7cb5ec'},{name:'ä¸Šä¸Šå‘¨',data:[[1492387200000,17585],[1492473600000,13115],[1492560000000,14685],[1492646400000,13475],[1492732800000,27765],[1492819200000,29115],[1492905600000,15590]],type:'spline',color:'#90ed7d'}], 
             tooltip:{dateTimeLabelFormats:{day:'%Y-%m-%d'}}, 
             }); 
             }); 
