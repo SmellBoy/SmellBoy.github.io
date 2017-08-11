@@ -206,6 +206,15 @@
 		window.requestAnimationFrame(step);
 	}
 	window.requestAnimationFrame(step);
+	  
+	  zhuge.track('购买商品'); //事件名称不能超过20个字符
+	  
+	  zhuge.track('购买商品', {
+    '商品分类' : '手机',
+    '商品名称' : 'iPhone7 64g',
+    '数量' : 2
+});   //属性名称不能超过255个字符，属性值不能超过200个字符
+	  
 </script> 
   <title>2048 Game - SmellBoy</title> 
   <link href="./main.css" rel="stylesheet" type="text/css" /> 
@@ -240,6 +249,7 @@
     </div> 
    </div> 
    <div class="game-intro"> 
+	   
     <a class="restart-button">New Game</a> 
     <h2 class="subtitle">Play <strong>2048 Game</strong> Online</h2> 
     <div class="above-game"> 
