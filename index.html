@@ -50,16 +50,20 @@
      c.parentNode.insertBefore(a, c);
      window.zhuge._init(b, x)}};
 	  
-	  window.zhuge.load('b1e144fc736e408b8715ac9b774e9ab6');//配置应用的AppKey
-	    
+	  // window.zhuge.load('b1e144fc736e408b8715ac9b774e9ab6');//配置应用的AppKey
+	  window.zhuge.load('b1e144fc736e408b8715ac9b774e9ab6', {
+		  autoTrack: true, //全埋点开关
+		  singlePage: false, //是否为单页面应用 默认为false
+		  visualizer: true  //可视化埋点开关
+	  });
+	  
 	  zhuge.track('购买商品'); //事件名称不能超过20个字符
 	  
 	  zhuge.track('购买商品', {
-    '商品分类' : '手机',
-    '商品名称' : 'iPhone7 64g',
-    '数量' : 2
-});   //属性名称不能超过255个字符，属性值不能超过200个字符
-	  window.zhuge.load.visualizer: true  //可视化埋点开关
+		  '商品分类' : '手机',
+		  '商品名称' : 'iPhone7 64g',
+		  '数量' : 2
+	  });   //属性名称不能超过255个字符，属性值不能超过200个字符
 	  
 </script>
 	 
